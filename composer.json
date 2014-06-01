@@ -1,0 +1,30 @@
+{
+    "name": "event-centric/when",
+    "description": "Delegate Domain Events to event-specific methods",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "homepage": "https://github.com/event-centric/when",
+    "authors": [
+        {
+            "name": "Mathias Verraes",
+            "email": "mathias@verraes.net",
+            "homepage": "http://verraes.net"
+        }
+    ],
+    "keywords": ["domain-driven design", "cqrs", "event sourcing", "ddd", "reactive"],
+
+    "require": {
+        "event-centric/domain-event": "*",
+        "mathiasverraes/classfunctions": "1.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "EventCentric\\": ["src/EventCentric", "tests/EventCentric"]
+        }
+    },
+
+    "config": {
+        "bin-dir": "bin"
+    }
+}
