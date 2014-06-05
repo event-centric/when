@@ -2,7 +2,8 @@
 
 namespace EventCentric\When;
 
-use EventCentric\DomainEvent\DomainEvent;
+use EventCentric\DomainEvents\DomainEvent;
+use EventCentric\DomainEvents\DomainEvents;
 
 /**
  * Unfortunately we don't have method overloading in PHP. By implementing the `When` trait, you can simulate that by
@@ -18,8 +19,8 @@ trait When
     abstract protected function when(DomainEvent $event);
 
     /**
-     * @param DomainEvent[] $events
+     * @param DomainEvents $events
      * @return void
      */
-    abstract protected function whenAll($events);
+    abstract protected function whenAll(DomainEvents $events);
 }

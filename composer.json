@@ -14,7 +14,7 @@
     "keywords": ["domain-driven design", "cqrs", "event sourcing", "ddd", "reactive"],
 
     "require": {
-        "event-centric/domain-event": "*",
+        "event-centric/domain-events": "*",
         "mathiasverraes/classfunctions": "1.*"
     },
 

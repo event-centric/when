@@ -2,14 +2,14 @@
 
 namespace EventCentric\When\ConventionBased;
 
-use EventCentric\DomainEvent\DomainEvent;
+use EventCentric\DomainEvents\DomainEvent;
+use EventCentric\DomainEvents\DomainEvents;
 use EventCentric\When\When;
 use Verraes\ClassFunctions\ClassFunctions;
 
 trait ConventionBasedWhen
 {
     use When;
-
 
     /**
      * @param DomainEvent $event
@@ -21,10 +21,10 @@ trait ConventionBasedWhen
     }
 
     /**
-     * @param DomainEvent[] $events
+     * @param DomainEvents $events
      * @return void
      */
-    protected function whenAll($events)
+    protected function whenAll(DomainEvents $events)
     {
         array_map([$this, 'when'], $events);
     }
