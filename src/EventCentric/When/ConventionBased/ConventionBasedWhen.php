@@ -29,7 +29,7 @@ trait ConventionBasedWhen
      */
     protected function whenAll(DomainEvents $events)
     {
-        array_map([$this, 'when'], $events);
+        $events->map([$this, 'when']);
     }
 
 }
