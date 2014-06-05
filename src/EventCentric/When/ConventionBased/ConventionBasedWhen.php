@@ -17,7 +17,10 @@ trait ConventionBasedWhen
      */
     protected function when(DomainEvent $event)
     {
-        $this->{'when' . ClassFunctions::short($event)}($event);
+        $method = 'when' . ClassFunctions::short($event);
+        if(is_callable([$this, $method])) {
+            $this->{$method}($event);
+        }
     }
 
     /**
