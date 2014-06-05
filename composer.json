@@ -20,7 +20,7 @@
 
     "autoload": {
         "psr-4": {
-            "EventCentric\\": ["src/EventCentric", "tests/EventCentric"]
+            "EventCentric\\When\\": ["src/EventCentric/When", "tests/EventCentric/When"]
         }
     },
 

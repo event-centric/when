@@ -1,10 +1,57 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "3810a0ce2f6b0ca98a242e307af58c25",
+    "hash": "49a2512655124e24aa927f57890a3855",
     "packages": [
+        {
+            "name": "event-centric/domain-events",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/event-centric/domain-events.git",
+                "reference": "4191b0d48e84ca7c9382ef3776c1a7ceec220f3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/event-centric/domain-events/zipball/4191b0d48e84ca7c9382ef3776c1a7ceec220f3e",
+                "reference": "4191b0d48e84ca7c9382ef3776c1a7ceec220f3e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EventCentric\\": [
+                        "src/EventCentric",
+                        "tests/EventCentric"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathias Verraes",
+                    "email": "mathias@verraes.net",
+                    "homepage": "http://verraes.net",
+                    "role": "Developer of wrapped Money library"
+                }
+            ],
+            "description": "Domain Events",
+            "homepage": "https://github.com/event-centric/domain-events",
+            "keywords": [
+                "cqrs",
+                "ddd",
+                "domain-driven design",
+                "event sourcing",
+                "reactive"
+            ],
+            "time": "2014-06-05 15:40:24"
+        },
         {
             "name": "mathiasverraes/classfunctions",
             "version": "dev-master",
