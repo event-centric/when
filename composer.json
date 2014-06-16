@@ -15,7 +15,7 @@
 
     "require": {
         "php": ">=5.5",
-        "event-centric/domain-events": "*",
+        "event-centric/domain-events": "~0.0@dev",
         "mathiasverraes/classfunctions": "1.*"
     },
 
@@ -27,5 +27,11 @@
 
     "config": {
         "bin-dir": "bin"
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.x-dev"
+        }
     }
 }
