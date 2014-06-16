@@ -1,7 +1,6 @@
 {
     "name": "event-centric/when",
     "description": "Delegate Domain Events to event-specific methods",
-    "minimum-stability": "dev",
     "license": "MIT",
     "homepage": "https://github.com/event-centric/when",
     "authors": [
@@ -21,12 +20,14 @@
 
     "autoload": {
         "psr-4": {
-            "EventCentric\\When\\": ["src/EventCentric/When", "tests/EventCentric/When"]
+            "EventCentric\\When\\": ["src/EventCentric/When"]
         }
     },
 
-    "config": {
-        "bin-dir": "bin"
+    "autoload-dev": {
+        "psr-4": {
+            "EventCentric\\When\\": ["tests/EventCentric/When"]
+        }
     },
 
     "extra": {
